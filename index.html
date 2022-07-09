@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS CLUB</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    /* css reset */
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .back {
+        background: url(image/gymgirl.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .left {
+
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 15px;
+
+
+    }
+
+    .mid {
+        display: block;
+        width: 700px;
+        margin: 5px auto;
+        top: 30px;
+    }
+
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        display: inline-block;
+    }
+
+    .left img {
+        width: 136px;
+        /* filter: invert(100%); */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: red;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .btn {
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        margin: 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid blue;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: skyblue;
+    }
+
+    .container {
+        background-color: transparent;
+        color: white;
+        margin: 50px;
+        padding: 36px 36px;
+        width: 30%;
+        border-radius: 10px;
+        /* border: 2px solid black; */
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 8px;
+        border: 2px solid blue;
+        margin: 11px auto;
+        font-size: 12px;
+        border-radius: 5px;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    .container button {
+        display: block;
+        width: 380px;
+        margin: auto;
+    }
+
+    .container1 {
+        display: block;
+        float: center;
+        margin: 44px;
+        padding: 44px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        background-color: slateblue;
+        color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+
+
+    #pic img {
+        margin: 10px;
+        padding: 33px;
+        border: 3px solid blue;
+        object-position: top center;
+        border-radius: 8px;
+        background-color: gray;
+    }
+
+
+    .foot {
+        background-color: black;
+        text-align: center;
+        padding: 0px;
+
+
+    }
+</style>
+
+<body>
+    <div class="back">
+        <header class="header">
+            <div class="left">
+                <!-- left box for logo -->
+                <img src="image/logo.png" alt="">
+
+            </div>
+            <div class="mid">
+                <!-- mid box for navbar -->
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Hub</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <!-- right box for buttons -->
+                <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+            </div>
+        </header>
+        <div class="container">
+            <h1>JOIN THE BEST GYM OF DELHI NOW</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Locality">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Mobile No">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email Address">
+                </div>
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div style="text-align: left;" id="pic">
+        <img height="300px" width="700px" src="image/gym.jpg" alt="loading">
+
+    </div>
+
+    <div style="text-align: right;" id="pic">
+        <img height="300px" width="700px" src="image/gymboy.jpg" alt="loading">
+
+    </div>
+    <div style="text-align: left;" id="pic">
+        <img height="300px" width="700px" src="image/gymboy1.jpg" alt="loading">
+    </div>
+    <div class="container1">
+        <h2>CONTACT US</h2>
+        <div>Near Hanuman Mandir Modal Town 2nd floor building no-8 </div>
+        <div> Mail: fitnesshub@gmail.com <br>Tel: 123-456-7890</div>
+
+    </div>
+
+    <footer class="foot">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022 by the studio proudly.</p>
+        <a href="#">Privacy</a> || <a href="#">Terms</a>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
